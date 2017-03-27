@@ -4,6 +4,10 @@ permalink: /:categories/:title/
 
 highlighter: rouge
 
+sass:
+    sass_dir: _sass
+    style: compressed
+
 kramdown:
   parse_block_html: true
   syntax_highlighter: rouge

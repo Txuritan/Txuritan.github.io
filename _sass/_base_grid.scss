@@ -1,17 +1,17 @@
-@grid-1of3: (100%/3);
+$grid-1of3: (100%/3);
 
 .grid {
   .col {
     display: inline-block;
     float: left;
     &-1of3 {
-      width: ((@grid-1of3));
+      width: (($grid-1of3));
     }
     &-2of3 {
-      width: ((@grid-1of3*2));
+      width: (($grid-1of3*2));
     }
     &-3of3 {
-      width: ((@grid-1of3*3));
+      width: (($grid-1of3*3));
     }
   }
 }

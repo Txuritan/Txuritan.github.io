@@ -1,39 +1,41 @@
+@import "_variables";
+
 .highlighter-rouge {
   &.language-java {
     .highlight code {
       span {
         &.kn {
-          color: @color-orange;
+          color: $color-orange;
         }
         &.n {
-          color: @color-red;
+          color: $color-red;
         }
         &.na {
-          color: @color-sand;
+          color: $color-sand;
         }
         &.nn {
-          color: @color-yellow;
+          color: $color-yellow;
         }
         &.nd {
-          color: @color-magenta;
+          color: $color-magenta;
         }
         &.s {
-          color: @color-green;
+          color: $color-green;
         }
         &.kd {
-          color: @color-sky-blue;
+          color: $color-sky-blue;
         }
         &.nc {
-          color: @color-pink;
+          color: $color-pink;
         }
         &.k {
-          color: @color-purple;
+          color: $color-purple;
         }
         &.kt {
-          color: @color-mint;
+          color: $color-mint;
         }
         &.nf {
-          color: @color-lime;
+          color: $color-lime;
         }
       }
     }
@@ -42,16 +44,16 @@
     .highlight code {
       span {
         &.n {
-          color: @color-red;
+          color: $color-red;
         }
         &.s1, &.s2 {
-          color: @color-green;
+          color: $color-green;
         }
         &.nl {
-          color: @color-mint;
+          color: $color-mint;
         }
         &.mf {
-          color: @color-sky-blue;
+          color: $color-sky-blue;
         }
       }
     }

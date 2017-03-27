@@ -1,4 +1,4 @@
-@import '../variables/variables';
+@import "_variables";
 
 body {
   font-family: 'Source Code Pro', monospace;
@@ -11,7 +11,7 @@ h1, h2, h3, h4, h5, h6, p {
 pre.highlight {
   code {
     display: block;
-    padding: @padding*2;
+    padding: $padding * 2;
   }
 }
 
@@ -32,12 +32,12 @@ table {
   width: 100%;
 }
 
-@import (inline) "../../node_modules/normalize-css/normalize.css";
+@import "_vendor_normalize";
 
-@import "_grid";
+@import "_base_grid";
 
-@import "_button";
-@import "_panel";
+@import "_base_button";
+@import "_base_panel";
 
-@import "../theme/light/light";
-@import "../theme/dark/dark";
+@import "_light";
+@import "_dark";

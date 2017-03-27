@@ -6,16 +6,29 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>{{ page.title }} | Txuritan</title>
-    <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,700" rel="stylesheet" type="text/css"
-          media="all">
-    <link href="/css/base.min.css" rel="stylesheet" type="text/css" media="all">
+    {% capture base %}
+    {% include base.scss %}
+    {% endcapture %}
+
+    <style>
+        {{ base | scssify }}
+    </style>
     <title></title>
 </head>
 
 <body>
-    <script src="/js/base.js"></script>
     {{ content }}
     {% include footer.html %}
+    <script>
+        var time = new Date().getHours();
+        if ((time >= 20 && time <= 23) || (time >= 0 && time <= 4)) {
+            document.body.setAttribute("class", "dark");
+        } else {
+            document.body.setAttribute("class", "light");
+        }
+    </script>
+    <script async src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>WebFont.load({google:{families: ['Source Code Pro:400,700']}});</script>
 </body>
 
 </html>

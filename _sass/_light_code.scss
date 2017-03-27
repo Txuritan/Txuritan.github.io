@@ -1,0 +1,61 @@
+@import "_variables";
+
+.highlighter-rouge {
+  &.language-java {
+    .highlight code {
+      span {
+        &.kn {
+          color: $color-orange-dark;
+        }
+        &.n {
+          color: $color-red-dark;
+        }
+        &.na {
+          color: $color-sand-dark;
+        }
+        &.nn {
+          color: $color-yellow-dark;
+        }
+        &.nd {
+          color: $color-magenta-dark;
+        }
+        &.s {
+          color: $color-green-dark;
+        }
+        &.kd {
+          color: $color-sky-blue-dark;
+        }
+        &.nc {
+          color: $color-pink-dark;
+        }
+        &.k {
+          color: $color-purple-dark;
+        }
+        &.kt {
+          color: $color-mint-dark;
+        }
+        &.nf {
+          color: $color-lime-dark;
+        }
+      }
+    }
+  }
+  &.language-groovy {
+    .highlight code {
+      span {
+        &.n {
+          color: $color-red-dark;
+        }
+        &.s1, &.s2 {
+          color: $color-green-dark;
+        }
+        &.nl {
+          color: $color-mint-dark;
+        }
+        &.mf {
+          color: $color-sky-blue-dark;
+        }
+      }
+    }
+  }
+}

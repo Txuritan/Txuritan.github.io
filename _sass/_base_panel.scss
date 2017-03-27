@@ -1,0 +1,16 @@
+@import "_variables";
+
+.panel {
+  border: transparent solid $padding;
+  margin: $margin;
+  padding: $padding;
+  &-header {
+    padding: $padding;
+  }
+  &-body {
+    padding: $padding;
+  }
+  &-footer {
+    padding: $padding;
+  }
+}
