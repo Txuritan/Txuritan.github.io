@@ -1,0 +1,34 @@
+---
+layout: default
+---
+<div class="grid">
+    <div class="col col-1of3">
+        {% include navigation.html %}
+    </div>
+    <div class="col col-2of3">
+        <div class="panel">
+            <div class="panel-header">
+                <h3>{{ page.title }}</h3>
+            </div>
+            <div class="panel-body">
+                {{ content }}
+            </div>
+            <div class="panel-footer">
+                <div id="disqus_thread"></div>
+                <script type="text/javascript">
+                    var disqus_shortname = 'txuritan';
+                    var disqus_identifier = '{{ page.disqusid }}';
+                    (function () {
+                        var dsq = document.createElement('script');
+                        dsq.type = 'text/javascript';
+                        dsq.async = true;
+                        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+                        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+                    })();
+                </script>
+                <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a>
+                </noscript>
+            </div>
+        </div>
+    </div>
+</div>

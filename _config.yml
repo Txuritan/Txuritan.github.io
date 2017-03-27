@@ -1,0 +1,16 @@
+exclude: ["Gemfile", "Gemfile.lock", "node", "node_modules", "README.md", "txuritan.github.io.iml"]
+
+permalink: /:categories/:title/
+
+highlighter: rouge
+
+kramdown:
+  parse_block_html: true
+  syntax_highlighter: rouge
+
+paginate: 2
+paginate_path: "/post/page:num/"
+
+gems:
+  - jekyll-sitemap
+  - jekyll-feed

@@ -1,0 +1,34 @@
+---
+title: 404
+layout: default
+---
+
+<div class="grid">
+    <div class="col col-1of3">
+        {% include navigation.html %}
+    </div>
+    <div class="col col-2of3">
+        <div class="panel">
+            <div class="panel-header">
+                <h3>{{ page.title }}</h3>
+            </div>
+            <div class="panel-body">
+                <div id="image"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    var imageArray = [];
+    imageArray[0] = "/img/404.coffee.not.found.jpg";
+    imageArray[1] = "/img/404.loli.not.found.png";
+    imageArray[2] = "/img/404.loli.will.find.it.gif";
+    imageArray[3] = "/img/404.no.one.get.this.please.jpg";
+
+    function doIt() {
+        var rand = Math.floor(Math.random() * (imageArray.length));
+        document.getElementById("image").innerHTML = "<img style='width: 100%;' src='" + imageArray[rand] + "'/>";
+    }
+    doIt();
+</script>
