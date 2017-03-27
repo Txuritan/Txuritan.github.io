@@ -1,4 +1,4 @@
-exclude: ["Gemfile", "Gemfile.lock", "node", "node_modules", "README.md", "txuritan.github.io.iml"]
+exclude: ["Gemfile", "Gemfile.lock", "node", "node_modules", "README.md", "txuritan.github.io.iml", "vendor"]
 
 permalink: /:categories/:title/
 
