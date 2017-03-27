@@ -3,7 +3,8 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "grunt default"
+    "start": "grunt default",
+    "build": "grunt build"
   },
   "dependencies": {},
   "devDependencies": {

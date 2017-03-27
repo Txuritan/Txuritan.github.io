@@ -16,6 +16,10 @@ pre.highlight code {
 }
 code {
   padding: 2px;
+  overflow-y: auto;
+}
+pre {
+  white-space: pre;
 }
 .text-center {
   text-align: center;
