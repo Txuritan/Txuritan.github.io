@@ -12,7 +12,7 @@ layout: default
                 <h3>{{ page.title }}</h3>
             </div>
             <div class="panel-body">
-                <table>
+                <table class="table">
                     <thead>
                         <tr>
                             <th>Tile</th>
@@ -30,11 +30,11 @@ layout: default
                     <tbody>
                         {% for story in site.data.stories %}
                         <tr>
-                            <td>
+                            <td data-th="Tile">
                                 <a href="/stories/{{ story.link }}">{{ story.name }}</a>
                             </td>
-                            <td>{{ story.from }}<br/>{{ story.summory }}<br/>{{ story.tags }}</td>
-                            <td>{{ story.chapters }}</td>
+                            <td data-th="Summary">{{ story.from }}<br/>{{ story.summory }}<br/>{{ story.tags }}</td>
+                            <td data-th="Chapters">{{ story.chapters }}</td>
                         </tr>
                         {% endfor %}
                     </tbody>
