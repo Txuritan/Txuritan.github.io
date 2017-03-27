@@ -3,7 +3,7 @@ title: A Wolf And Her Son Chapter 1 - Pain!
 layout: chapter
 disqus: a-wolf-and-her-son-ch-1
 story-name: A Wolf And Her Son
-story-summory: "Holo continues to live on after Lawrence's death years ago. She then finds Harry an inch from death in the forest near her house, she takes him in as and raises him as one of her own."
+story-summary: "Holo continues to live on after Lawrence's death years ago. She then finds Harry an inch from death in the forest near her house, she takes him in as and raises him as one of her own."
 prev: 
 next: 
 ---

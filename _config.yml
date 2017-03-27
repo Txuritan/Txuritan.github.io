@@ -12,9 +12,6 @@ kramdown:
   parse_block_html: true
   syntax_highlighter: rouge
 
-paginate: 2
-paginate_path: "/post/page:num/"
-
 gems:
   - jekyll-sitemap
   - jekyll-feed

@@ -3,7 +3,7 @@ title: Alla and Taeh Chapter 1
 layout: chapter
 disqus: alla-and-taeh-ch-1
 story-name: Alla and Taeh
-story-summory: A loli cat and a fox scientist, what could go wrong?
+story-summary: A loli cat and a fox scientist, what could go wrong?
 prev: 
 next: ch-2
 ---

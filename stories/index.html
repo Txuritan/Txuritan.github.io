@@ -13,30 +13,26 @@ layout: default
             </div>
             <div class="panel-body">
                 <table class="table">
-                    <thead>
-                        <tr>
-                            <th>Tile</th>
-                            <th>Summary</th>
-                            <th>Chapters</th>
-                        </tr>
-                    </thead>
-                    <tfoot>
-                        <tr>
-                            <th>Tile</th>
-                            <th>Summary</th>
-                            <th>Chapters</th>
-                        </tr>
-                    </tfoot>
                     <tbody>
+                        <tr>
+                            <th>Tile</th>
+                            <th>Summary</th>
+                            <th>Chapters</th>
+                        </tr>
                         {% for story in site.data.stories %}
                         <tr>
                             <td data-th="Tile">
                                 <a href="/stories/{{ story.link }}">{{ story.name }}</a>
                             </td>
-                            <td data-th="Summary">{{ story.from }}<br/>{{ story.summory }}<br/>{{ story.tags }}</td>
+                            <td data-th="Summary">{{ story.from }}<br/>{{ story.summary }}<br/>{{ story.tags }}</td>
                             <td data-th="Chapters">{{ story.chapters }}</td>
                         </tr>
                         {% endfor %}
+                        <tr>
+                            <th>Tile</th>
+                            <th>Summary</th>
+                            <th>Chapters</th>
+                        </tr>
                     </tbody>
                 </table>
             </div>

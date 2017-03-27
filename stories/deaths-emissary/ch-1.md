@@ -3,7 +3,7 @@ title: Deaths Emissary Chapter 1 - Confession
 layout: chapter
 disqus: deaths-emissary-ch-1
 story-name: Deaths Emissary
-story-summory: 
+story-summary: 
 prev: 
 next: 
 ---

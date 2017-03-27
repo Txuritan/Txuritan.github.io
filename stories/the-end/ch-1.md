@@ -3,7 +3,7 @@ title: The End Chapter 1 - Love is Gone
 layout: chapter
 disqus: the-end-ch-1
 story-name: The End
-story-summory: Random Idea
+story-summary: Random Idea
 prev: 
 next:
 ---

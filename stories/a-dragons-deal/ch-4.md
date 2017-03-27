@@ -3,7 +3,7 @@ title: A Dragon's Deal Chapter 4 - The Deal
 layout: chapter
 disqus: a-dragons-deal-ch-4
 story-name: A Dragon's Deal
-story-summory: Hicca makes a deal and now she has to kill the Red Death or she will turn into a dragon. X-Jinxa-X's A Dragons Deal. Thx X-Jinxa-X for giving me this story. Female Hiccup.
+story-summary: Hicca makes a deal and now she has to kill the Red Death or she will turn into a dragon. X-Jinxa-X's A Dragons Deal. Thx X-Jinxa-X for giving me this story. Female Hiccup.
 prev: ch-3
 next:
 ---
