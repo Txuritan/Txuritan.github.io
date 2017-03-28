@@ -34,11 +34,11 @@ public class Core {
 This is the code for TXCore's INI check system. Your class must implement IIniConfig or else your class wont be recognized.
 
 ```java
-package com.github.txuritan.core;
+package com.github.txuritan.txcore;
 
-import com.github.txuritan.core.api.config.Configuration;
-import com.github.txuritan.core.api.config.IIniConfig;
-import com.github.txuritan.core.ini4j.Ini;
+import com.github.txuritan.txcore.api.config.Configuration;
+import com.github.txuritan.txcore.api.config.IIniConfig;
+import com.github.txuritan.txcore.ini4j.Ini;
 import org.apache.logging.log4j.Logger;
 
 public class Config implements IIniConfig {
@@ -47,6 +47,9 @@ public class Config implements IIniConfig {
     public Config(Configuration configuration) {
         this.configuration = configuration;
     }
+
+    private String section = "txcore";
+    private String sectionTest = section + ".test";
 
     public Boolean debug;
 
@@ -60,28 +63,28 @@ public class Config implements IIniConfig {
     @Override
     public void config(Ini ini) {
 
-        debug = configuration.getSetKeyBoolean(ini, "txcore", "debug", false);
+        debug = configuration.getSetKeyBoolean(ini, section, "debug", false);
 
         if(debug) {
             getLogger().info("Preforming CoreIni Check");
 
-            testBoolean = configuration.getSetKeyBoolean(ini, "txcore.test", "testBoolean", false);
-            getLogger().info("Default value: false, gotten: " + configuration.getSetKeyBoolean(ini, "txcore.test", "testBoolean", false));
+            testBoolean = configuration.getSetKeyBoolean(ini, sectionTest, "testBoolean", false);
+            getLogger().info("Default value: false, gotten: " + configuration.getKeyBoolean(ini, sectionTest, "testBoolean"));
 
-            testDouble = configuration.getSetKeyDouble(ini, "txcore.test", "testDouble", 1.0);
-            getLogger().info("Default value: 1.0, gotten: " + configuration.getSetKeyDouble(ini, "txcore.test", "testDouble", 1.0));
+            testDouble = configuration.getSetKeyDouble(ini, sectionTest, "testDouble", 1.0);
+            getLogger().info("Default value: 1.0, gotten: " + configuration.getKeyDouble(ini, sectionTest, "testDouble"));
 
-            testFloat = configuration.getSetKeyFloat(ini, "txcore.test", "testFloat", 1.0f);
-            getLogger().info("Default value: 1.0f, gotten: " + configuration.getSetKeyFloat(ini, "txcore.test", "testFloat", 1.0f));
+            testFloat = configuration.getSetKeyFloat(ini, sectionTest, "testFloat", 1.0f);
+            getLogger().info("Default value: 1.0f, gotten: " + configuration.getKeyFloat(ini, sectionTest, "testFloat"));
 
-            testInteger = configuration.getSetKeyInteger(ini, "txcore.test", "testInteger", 1);
-            getLogger().info("Default value: 1, gotten: " + configuration.getSetKeyInteger(ini, "txcore.test", "testInteger", 1));
+            testInteger = configuration.getSetKeyInteger(ini, sectionTest, "testInteger", 1);
+            getLogger().info("Default value: 1, gotten: " + configuration.getKeyInteger(ini, sectionTest, "testInteger"));
 
-            testLong = configuration.getSetKeyLong(ini, "txcore.test", "testLong", 1L);
-            getLogger().info("Default value: 1L, gotten: " + configuration.getSetKeyLong(ini, "txcore.test", "testLong", 1L));
+            testLong = configuration.getSetKeyLong(ini, sectionTest, "testLong", 1L);
+            getLogger().info("Default value: 1L, gotten: " + configuration.getKeyLong(ini, sectionTest, "testLong"));
 
-            testString = configuration.getSetKeyString(ini, "txcore.test", "testString", "yay it works");
-            getLogger().info("Default value: \"yay it works\", gotten: " + configuration.getSetKeyString(ini, "txcore.test", "testString", "yay it works"));
+            testString = configuration.getSetKeyString(ini, sectionTest, "testString", "yay it works");
+            getLogger().info("Default value: \"yay it works\", gotten: " + configuration.getKeyString(ini, sectionTest, "testString"));
         }
     }
 
@@ -107,10 +110,10 @@ public class Config implements IIniConfig {
 You will need to register your config class with TXCore commonly done in the FMLPreInitializationEvent.
 
 ```java
-package com.github.txuritan.core.proxy;
+package com.github.txuritan.txcore.proxy;
 
-import com.github.txuritan.core.Config;
-import com.github.txuritan.core.api.config.Configuration;
+import com.github.txuritan.txcore.Config;
+import com.github.txuritan.txcore.api.config.Configuration;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
