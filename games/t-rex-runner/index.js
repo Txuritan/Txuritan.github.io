@@ -78,7 +78,7 @@
      * Default game width.
      * @const
      */
-    var DEFAULT_WIDTH = window.innerWidth;
+    var DEFAULT_WIDTH = 600;
 
     /**
      * Frames per second.
