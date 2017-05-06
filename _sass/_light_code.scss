@@ -1,7 +1,6 @@
 @import "_variables";
 
 .highlighter-rouge {
-  &.language-java {
     .highlight code {
       span {
         &.kn {
@@ -37,12 +36,6 @@
         &.nf {
           color: $color-lime-dark;
         }
-      }
-    }
-  }
-  &.language-groovy {
-    .highlight code {
-      span {
         &.n {
           color: $color-red-dark;
         }
@@ -57,5 +50,4 @@
         }
       }
     }
-  }
 }
