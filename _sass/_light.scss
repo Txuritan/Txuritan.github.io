@@ -3,6 +3,12 @@
 body.light {
   background-color: $color-white;
   color: $color-black;
+  
+  a {
+    text-decoration-style: dashed;
+    text-decoration-color: $color-blue-dark;
+    text-decoration-line: underline;
+  }
 
   a, p {
     color: $color-black;
