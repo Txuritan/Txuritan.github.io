@@ -15,3 +15,5 @@ kramdown:
 plugins:
   - jekyll-sitemap
   - jekyll-feed
+
+# incremental: true

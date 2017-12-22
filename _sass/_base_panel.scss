@@ -1,7 +1,7 @@
 @import "_variables";
 
 .panel {
-  border: transparent solid $padding;
+  border: transparent solid $border;
   margin: $margin;
   padding: $padding;
   &-header {

@@ -2,7 +2,7 @@
 
 .panel {
   background-color: $color-white;
-  border: $color-blue-dark solid $padding;
+  border: $color-blue-dark solid $border;
   &-header {
     border-bottom: $color-blue-dark dashed 1px;
     color: $color-black;

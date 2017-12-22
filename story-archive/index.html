@@ -1,0 +1,33 @@
+---
+title: "Story Archive"
+layout: default
+---
+<div class="grid">
+    <div class="col col-1of3">
+        {% include navigation.html %}
+    </div>
+    <div class="col col-2of3">
+        <div class="panel">
+            <div class="panel-header">
+                <h3>{{ page.title }}</h3>
+            </div>
+            <div class="panel-body">
+                <p>
+                    This is an archive of my favorite (non published) stories and fanfictions.
+                    <br/>
+                    This uses keyword tag searching (ex: fandom:harry potter or au)
+                </p>
+                <div class="panel">
+                    <div class="panel-header">
+                        <label for="js__input--search">Tag based search</label>
+                        <input id="js__input--search"></input>
+                    </div>
+                    <div class="panel-body" id="js__results">
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="story-archive.js"></script>
