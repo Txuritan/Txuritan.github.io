@@ -5,7 +5,7 @@ disqus: the-end-ch-1
 story-name: The End
 story-summary: Random Idea
 prev: 
-next:
+next: ch-2
 ---
 
 ## Chapter 1: Love is Gone ##
