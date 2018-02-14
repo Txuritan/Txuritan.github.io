@@ -1,0 +1,14 @@
+panel {
+  display: flex;
+  flex-direction: column;
+  padding: $padding--small;
+  phead {
+    padding: $padding--small;
+  }
+  pbody {
+    padding: $padding--small;
+  }
+  pfoot {
+    padding: $padding--small;
+  }
+}

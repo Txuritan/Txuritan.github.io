@@ -3,33 +3,34 @@
 <html lang="en">
 
 <head>
-    <meta name="google-site-verification" content="t0b_3DzzBNlL06p6dVyEMTvtFWA6skcBQZ58oSPG4bg" />
-    <meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>{{ page.title }} | Txuritan</title>
-    <link rel="alternate" href="https://txuritan.github.io/" hreflang="en" />
-    <link rel="shortcut icon" href="https://cdn.rawgit.com/Txuritan/txuritan.github.io/master/favicon.ico">
-    {% capture base %}
-    {% include base.scss %}
-    {% endcapture %}
-    <style>
-        {{ base | scssify }}
-    </style>
-    <title></title>
+  <meta name="google-site-verification" content="t0b_3DzzBNlL06p6dVyEMTvtFWA6skcBQZ58oSPG4bg" />
+  <meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ page.title }} | Txuritan</title>
+  <link rel="alternate" href="https://txuritan.github.io/" hreflang="en" />
+  <link rel="shortcut icon" href="https://cdn.rawgit.com/Txuritan/txuritan.github.io/master/favicon.ico">
+  {% capture base %}
+  {% include base.scss %}
+  {% endcapture %}
+  <style>
+    {{ base | scssify }}
+  </style>
+  <title></title>
 </head>
 
 <body>
-    {{ content }}
-    {% include footer.html %}
-    <script>
-        var time = new Date().getHours();
-        if ((time >= 20 && time <= 23) || (time >= 0 && time <= 4)) {
-            document.body.setAttribute("class", "dark");
-        } else {
-            document.body.setAttribute("class", "light");
-        }
-    </script>
+  {% include navigation.html %}
+  {{ content }}
+  {% include footer.html %}
+  <script>
+    var time = new Date().getHours();
+    if ((time >= 20 && time <= 23) || (time >= 0 && time <= 4)) {
+      document.body.setAttribute("dark", "");
+    } else {
+      document.body.setAttribute("light", "");
+    }
+  </script>
 </body>
 
 </html>

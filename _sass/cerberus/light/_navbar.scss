@@ -1,0 +1,28 @@
+body[light] {
+  nav {
+    &, &[primary] {
+      background-color: $color__light--black;
+      item {
+        background-color: $color__light--black;
+        &:hover {
+          background-color: darken($color__light--black, 10%);
+        }
+        > * {
+          color: $color__light--background;
+        }
+      }
+    }
+    &[secondary] {
+      background-color: $color__light--red;
+      item {
+        background-color: $color__light--red;
+        &:hover {
+          background-color: darken($color__light--red, 10%);
+        }
+        > * {
+          color: $color__light--background;
+        }
+      }
+    }
+  }
+}

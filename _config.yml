@@ -1,12 +1,12 @@
-exclude: ["Gemfile", "Gemfile.lock", "node", "node_modules", "README.md", "txuritan.github.io.iml", "vendor"]
+exclude: [".c9", "Gemfile", "Gemfile.lock", "node", "node_modules", "README.md", "txuritan.github.io.iml", "vendor"]
 
 permalink: /:categories/:title/
 
 highlighter: rouge
 
 sass:
-    sass_dir: _sass
-    style: compressed
+  sass_dir: _sass
+  style: compressed
 
 kramdown:
   parse_block_html: true
@@ -16,4 +16,4 @@ plugins:
   - jekyll-sitemap
   - jekyll-feed
 
-# incremental: true
+incremental: false

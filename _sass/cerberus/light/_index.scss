@@ -9,3 +9,10 @@ $color__light--white: #fafafa;
 
 $color__light--background: $color__light--white;
 $color__light--foreground: $color__light--black;
+
+body[light] {
+  background-color: $color__light--background;
+  color: $color__light--foreground;
+}
+
+@import "navbar";

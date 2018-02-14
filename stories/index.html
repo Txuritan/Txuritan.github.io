@@ -2,16 +2,13 @@
 title: Home
 layout: default
 ---
-<div class="grid">
-    <div class="col col-1of3">
-        {% include navigation.html %}
-    </div>
-    <div class="col col-2of3">
-        <div class="panel">
-            <div class="panel-header">
+<grid>
+    <colunm>
+        <panel>
+            <phead>
                 <h3>{{ page.title }}</h3>
-            </div>
-            <div class="panel-body">
+            </phead>
+            <pbody>
                 <table class="table">
                     <tbody>
                         <tr>
@@ -35,7 +32,7 @@ layout: default
                         </tr>
                     </tbody>
                 </table>
-            </div>
-        </div>
-    </div>
-</div>
+            </pbody>
+        </panel>
+    </colunm>
+</grid>
