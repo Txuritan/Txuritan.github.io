@@ -97,12 +97,12 @@ class StoryArchive {
         tags.forEach((tag) => {
             if (searched.length > 0) {
                 searched.forEach((story) => {
-                    if (this.allValuesOf(story).includes(tags[i])) {
+                    if (this.allValuesOf(story).includes(tag)) {
                         searched.push(story);
                     } else {
                         searched = searched.filter((e) => {
                             return e !== story;
-                        })
+                        });
                     }
                 });
             } else if (!searchedStories) {
