@@ -16,11 +16,89 @@
   <style>
     {{ base | scssify }}
   </style>
-  <title></title>
 </head>
 
 <body>
   {% include navigation.html %}
+  <script>
+    class Txuritan {
+      // noinspection JSMethodCanBeStatic
+      allValuesOf(object) {
+        let allValues = [];
+
+        let valuesOfObject = Object.keys(object).map((i) => object[i]);
+
+        for (let i = 0; i < valuesOfObject.length; i++) {
+          if (valuesOfObject[i] instanceof Array) {
+            allValues = allValues.concat(valuesOfObject[i]);
+          }
+          else if (valuesOfObject[i] instanceof Object) {
+            allValues = allValues.concat(this.allValuesOf(valuesOfObject[i]));
+          }
+          else {
+            allValues.push(valuesOfObject[i]);
+          }
+        }
+
+        return allValues;
+      }
+
+      // noinspection JSMethodCanBeStatic
+      db(tag, attributes, children) {
+        let element = document.createElement(tag);
+
+        if (attributes instanceof Array) {
+          attributes.forEach((attribute) => {
+            element.setAttribute(attribute[0], attribute[1]);
+          });
+        }
+        else if (attributes instanceof Object) {
+          for (let key of Object.keys(attributes)) {
+            element.setAttribute(key, attributes[key]);
+          }
+        }
+
+        if (children instanceof Array) {
+          children.forEach((child) => {
+            if (child instanceof Node) {
+              element.appendChild(child);
+            }
+            else if (child instanceof Array) {
+              child.forEach((grandchild) => {
+                if (grandchild instanceof Node) {
+                  element.appendChild(grandchild);
+                }
+                else {
+                  element.appendChild(document.createTextNode(grandchild));
+                }
+              });
+            }
+            else {
+              element.appendChild(document.createTextNode(child));
+            }
+          });
+        }
+
+        return element;
+      }
+
+      // https://stackoverflow.com/questions/8175093/simple-function-to-sort-an-array-of-objects/8175221#8175221
+      sortByKey(array, key) {
+        return array.sort((a, b) => {
+          let x = a[key];
+          let y = b[key];
+          return ((x < y) ? -1 : ((x > y) ? 1 : 0));
+        });
+      }
+
+      // noinspection JSMethodCanBeStatic
+      capitalize(text) {
+        return text.charAt(0).toUpperCase() + text.slice(1);
+      }
+    }
+  
+    const txuritan = new Txuritan();
+  </script>
   {{ content }}
   {% include footer.html %}
   <script>
