@@ -1,0 +1,22 @@
+nav {
+  display: flex;
+  flex-wrap: nowrap;
+  item {
+    flex: 0 1 auto;
+    &[brand] {
+      font-weight: bold;
+    }
+    &[grow] {
+      flex: 1 1 auto;
+    }
+  }
+  section {
+    display: flex;
+    flex: 0 1 auto;
+    flex-wrap: nowrap;
+    overflow-y: auto;
+    &[grow] {
+      flex: 1 1 auto;
+    }
+  }
+}

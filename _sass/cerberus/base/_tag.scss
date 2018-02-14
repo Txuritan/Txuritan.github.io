@@ -1,0 +1,9 @@
+tag {
+  display: flex;
+  flex: 0 1 auto;
+  side {
+    flex: 0 1 auto;
+    flex-wrap: nowrap;
+    padding: $padding--small;
+  }
+}
