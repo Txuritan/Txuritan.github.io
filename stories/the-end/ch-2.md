@@ -2,7 +2,7 @@
 title: "Chapter I: Escape"
 layout: chapter
 prev: "ch-1"
-next:
+next: "ch-2"
 ---
 
 ---

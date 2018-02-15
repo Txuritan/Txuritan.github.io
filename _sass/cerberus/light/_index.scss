@@ -13,6 +13,11 @@ $color__light--foreground: $color__light--black;
 body[light] {
   background-color: $color__light--background;
   color: $color__light--foreground;
+
+  a {
+    color: $color__light--blue;
+  }
 }
 
 @import "navbar";
+@import "panel";

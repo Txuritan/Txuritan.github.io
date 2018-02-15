@@ -12,11 +12,11 @@ layout: default
                 <p>
                     This is an archive of my favorite (non published) stories and fanfictions.
                     <br/><br/> This uses keyword tag searching that is separated by a comma. For fandoms just type the name. Have a look at the stories tags to get an idea of how they work to search them.
-                    <br/><br/> NOTE: If this does not work on your browser the it does not support ES6 and you should update.
+                    <br/><br/> NOTE: If this does not work on your browser then it does not support ES6 and you should update.
                 </p>
                 <panel>
                     <phead>
-                        <label for="js__input--search">Search</label>
+                        <label for="js__input--search">Search: </label>
                         <input id="js__input--search" />
                     </phead>
                     <pbody id="js__results">
@@ -165,7 +165,7 @@ layout: default
                     ]),
                     ' By ',
                     story['author'],
-                    txuritan.db('br', null, null),
+                    //txuritan.db('br', null, null),
                     story['fandom'].join(', ')
                 ])
             ]);
@@ -190,7 +190,7 @@ layout: default
                 ])
             ]);
 
-            return txuritan.db('panel', null, [
+            return txuritan.db('panel', {'outline':''}, [
                 header,
                 body,
                 footer

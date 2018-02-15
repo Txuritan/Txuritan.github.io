@@ -1,0 +1,5 @@
+panel {
+  &[outline] {
+    border: 1px solid darken($color__light--background, 10%);
+  }
+}
