@@ -1,38 +1,38 @@
 ---
-title: Home
+title: Stories
 layout: default
 ---
-<grid>
-    <colunm>
-        <panel>
-            <phead>
-                <h3>{{ page.title }}</h3>
-            </phead>
-            <pbody>
-                <table class="table">
-                    <tbody>
-                        <tr>
-                            <th>Tile</th>
-                            <th>Summary</th>
-                            <th>Chapters</th>
-                        </tr>
-                        {% for story in site.data.stories %}
-                        <tr>
-                            <td data-th="Tile">
-                                <a href="/stories/{{ story.link }}">{{ story.name }}</a>
-                            </td>
-                            <td data-th="Summary">{{ story.from }}<br/>{{ story.summary }}<br/>{{ story.tags }}</td>
-                            <td data-th="Chapters">{{ story.chapters }}</td>
-                        </tr>
-                        {% endfor %}
-                        <tr>
-                            <th>Tile</th>
-                            <th>Summary</th>
-                            <th>Chapters</th>
-                        </tr>
-                    </tbody>
-                </table>
-            </pbody>
-        </panel>
-    </colunm>
-</grid>
+<x-grid>
+  <x-colunm>
+    <x-panel>
+      <x-panel-head>
+        <h3>{{ page.title }}</h3>
+      </x-panel-head>
+      <x-panel-body>
+
+        {% for story in site.data.stories %}
+        <x-panel outline>
+          <x-panel-head>
+            <h3>
+              <a href="/stories/{{ story.link }}">{{ story.name }}</a>
+              <br />
+              {{ story.from }}
+            </h3>
+          </x-panel-head>
+          <x-panel-body>
+            <p>{{ story.summary }}</p>
+          </x-panel-body>
+          <x-panel-foot>
+            <p>
+              {{ story.tags }}
+              <br /><br />
+              Chapters: {{ story.chapters }}
+            </p>
+          </x-panel-foot>
+        </x-panel>
+        {% endfor %}
+
+      </x-panel-body>
+    </x-panel>
+  </x-colunm>
+</x-grid>

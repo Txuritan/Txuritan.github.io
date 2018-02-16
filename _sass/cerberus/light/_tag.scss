@@ -1,0 +1,22 @@
+x-tag {
+  x-side {
+    &[red] {
+      background-color: $color__light--red;
+    }
+    &[green] {
+      background-color: $color__light--green;
+    }
+    &[yellow] {
+      background-color: $color__light--yellow;
+    }
+    &[blue] {
+      background-color: $color__light--blue;
+    }
+    &[magenta] {
+      background-color: $color__light--magenta;
+    }
+    &[cyan] {
+      background-color: $color__light--cyan;
+    }
+  }
+}

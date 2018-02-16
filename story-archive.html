@@ -2,34 +2,38 @@
 title: "Story Archive"
 layout: default
 ---
-<grid>
-    <column>
-        <panel>
-            <phead>
+<x-grid>
+    <x-column>
+        <x-panel>
+            <x-panel-head>
                 <h3>{{ page.title }}</h3>
-            </phead>
-            <pbody>
+            </x-panel-head>
+            <x-panel-body>
                 <p>
                     This is an archive of my favorite (non published) stories and fanfictions.
                     <br/><br/> This uses keyword tag searching that is separated by a comma. For fandoms just type the name. Have a look at the stories tags to get an idea of how they work to search them.
                     <br/><br/> NOTE: If this does not work on your browser then it does not support ES6 and you should update.
                 </p>
-                <panel>
-                    <phead>
+                <x-panel>
+                    <x-panel-head>
                         <label for="js__input--search">Search: </label>
                         <input id="js__input--search" />
-                    </phead>
-                    <pbody id="js__results">
+                    </x-panel-head>
+                    <x-panel-body id="js__results">
 
-                    </pbody>
-                </panel>
-            </pbody>
-        </panel>
-    </column>
-</grid>
+                    </x-panel-body>
+                </x-panel>
+            </x-panel-body>
+        </x-panel>
+    </x-column>
+</x-grid>
 
 <script>
     /* global txuritan */
+    let Category = Object.freeze({
+        
+    });
+
     class StoryArchive {
         constructor() {
             this.stories = [{
@@ -158,39 +162,39 @@ layout: default
         }
 
         drawStory(story) {
-            const header = txuritan.db('phead', null, [
+            const header = txuritan.db('x-panel-head', null, [
                 txuritan.db('h3', null, [
                     txuritan.db('a', { 'href': story['url'] }, [
                         story['title']
                     ]),
                     ' By ',
                     story['author'],
-                    //txuritan.db('br', null, null),
+                    txuritan.db('br', null, null),
                     story['fandom'].join(', ')
                 ])
             ]);
 
-            const body = txuritan.db('pbody', null, [
+            const body = txuritan.db('x-panel-body', null, [
                 txuritan.db('p', null, [
                     story['summary']
                 ])
             ]);
 
-            const footer = txuritan.db('pfoot', null, [
+            const footer = txuritan.db('x-panel-foot', null, [
                 txuritan.db('p', null, [
                     story['tags'].join(', '),
                     txuritan.db('br', null, null),
                     txuritan.db('br', null, null),
-                    txuritan.capitalize(story['meta']['rating']), ', ',
+                    'Rating: ', txuritan.capitalize(story['meta']['rating']), ', ',
                     story['meta']['genres'].join(', '), ', ',
-                    story['meta']['chapters'], ', ',
-                    story['meta']['words'], ', ',
-                    story['meta']['updated'], ', ',
-                    story['meta']['published']
+                    'Chapters: ', story['meta']['chapters'], ', ',
+                    'Words: ', story['meta']['words'], ', ',
+                    'Updated: ', story['meta']['updated'], ', ',
+                    'Published: ', story['meta']['published']
                 ])
             ]);
 
-            return txuritan.db('panel', {'outline':''}, [
+            return txuritan.db('x-panel', {'outline':''}, [
                 header,
                 body,
                 footer

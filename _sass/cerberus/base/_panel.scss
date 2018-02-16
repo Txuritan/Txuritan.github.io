@@ -1,15 +1,15 @@
-panel {
+x-panel {
   display: flex;
   flex-direction: column;
   margin-bottom: $padding--small;
   padding: $padding--small;
-  phead {
+  x-panel-head {
     padding: $padding--small;
   }
-  pbody {
+  x-panel-body {
     padding: $padding--small;
   }
-  pfoot {
+  x-pandl-foot {
     padding: $padding--small;
   }
 }

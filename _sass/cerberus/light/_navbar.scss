@@ -1,8 +1,8 @@
 body[light] {
-  nav {
+  x-nav {
     &, &[primary] {
       background-color: $color__light--black;
-      item {
+      x-nav-item {
         background-color: $color__light--black;
         &:hover {
           background-color: darken($color__light--black, 10%);
@@ -14,7 +14,7 @@ body[light] {
     }
     &[secondary] {
       background-color: $color__light--red;
-      item {
+      x-nav-item {
         background-color: $color__light--red;
         &:hover {
           background-color: darken($color__light--red, 10%);

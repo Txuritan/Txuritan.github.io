@@ -1,7 +1,12 @@
-tag {
+x-tag {
   display: flex;
   flex: 0 1 auto;
-  side {
+  &-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+  x-side {
     flex: 0 1 auto;
     flex-wrap: nowrap;
     padding: $padding--small;

@@ -1,22 +1,20 @@
 ---
 layout: default
 ---
-<grid>
-    <column>
-        <panel>
-            <phead>
+<x-grid>
+    <x-column>
+        <x-panel>
+            <x-panel-head>
                 <h3>{{ page.title }}</h3>
-            </phead>
-            <phead>
                 <p>{{ page.story-summary }}</p>
-            </phead>
-            <pbody>
+            </x-panel-head>
+            <x-panel-body>
                 {{ content }}
-            </pbody>
-            <pfoot>
+            </x-panel-body>
+            <x-panel-foot>
                 <a class="button text-center" href="../{{ page.prev }}">Previous</a>
                 <a class="button text-center" href="../{{ page.next }}">Next</a>
-            </pfoot>
-        </panel>
-    </column>
-</grid>
+            </x-panel-foot>
+        </x-panel>
+    </x-column>
+</x-grid>

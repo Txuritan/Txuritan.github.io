@@ -2,30 +2,30 @@
 title: Search
 layout: default
 ---
-<grid>
-    <colunm>
-        <div class="panel">
-            <div class="panel-header">
-                <h3>{{ page.title }}</h3>
-            </div>
-            <div class="panel-body">
-                <form action="/search.html" method="get">
-                    <label for="search-box">Search</label>
-                    <input type="text" id="search-box" name="query">
-                    <input type="submit" value="search">
-                </form>
-                <ul id="search-results"></ul>
-            </div>
-        </div>
-    </colunm>
-</grid>
+<x-grid>
+  <x-colunm>
+    <x-panel>
+      <x-panel-head>
+        <h3>{{ page.title }}</h3>
+      </x-panel-head>
+      <x-panel-body>
+        <form action="/search.html" method="get">
+          <label for="search-box">Search</label>
+          <input type="text" id="search-box" name="query">
+          <input type="submit" value="search">
+        </form>
+        <ul id="search-results"></ul>
+      </x-panel-body>
+    </x-panel>
+  </x-colunm>
+</x-grid>
 
 <script>
-    class Search {
-        constructor() {
-            
-        }
+  class Search {
+    constructor() {
+
     }
-    
-    new Search();
+  }
+
+  new Search();
 </script>

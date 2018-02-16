@@ -2,52 +2,49 @@
 title: Mods
 layout: default
 ---
-<div class="grid">
-    <div class="col col-1of3">
-        {% include navigation.html %}
-    </div>
-    <div class="col col-2of3">
-        <div class="panel">
-            <div class="panel-header">
-                <h3>{{ page.title }}</h3>
-            </div>
-            <div class="panel-body">
+<x-grid>
+  <x-column>
+    <x-panel>
+      <x-panel-head>
+        <h3>{{ page.title }}</h3>
+      </x-panel-head>
+      <x-panel-body>
 
 
-                <div class="panel">
-                    <div class="panel-header">
-                        <h3>TXCore</h3>
-                    </div>
-                    <div class="panel-body">
-                        <p>A library adding .ini support for Minecraft mods.</p>
-                    </div>
-                    <div class="panel-footer">
-                        <a href="https://minecraft.curseforge.com/projects/txcore" class="button text-center">CurseForge</a>
-                        <a href="https://mods.io/mods/1259-txcore" class="button text-center">Mods.io</a>
-                        <a href="/downloads/" class="button text-center">Local</a>
-                        <a href="/mods/txcore/wiki/" class="button text-center">Wiki</a>
-                    </div>
-                </div>
+        <x-panel outline>
+          <x-panel-head>
+            <h3>TXCore</h3>
+          </x-panel-head>
+          <x-panel-body>
+            <p>A library adding .ini support for Minecraft mods.</p>
+          </x-panel-body>
+          <x-panel-foot>
+            <a href="https://minecraft.curseforge.com/projects/txcore" class="button text-center">CurseForge</a>
+            <a href="https://mods.io/mods/1259-txcore" class="button text-center">Mods.io</a>
+            <a href="/downloads/" class="button text-center">Local</a>
+            <a href="/mods/txcore/wiki/" class="button text-center">Wiki</a>
+          </x-panel-foot>
+        </x-panel>
 
 
-                <div class="panel">
-                    <div class="panel-header">
-                        <h3>Mental</h3>
-                    </div>
-                    <div class="panel-body">
-                        <p>Adding over 200 ores to your game, among other things.</p>
-                    </div>
-                    <div class="panel-footer">
-                        <a href="https://minecraft.curseforge.com/projects/metal" class="button text-center">CurseForge</a>
-                        <a href="https://mods.io/mods/1258-mental" class="button text-center">Mods.io</a>
-                        <a href="https://github.com/Txuritan/mental/" class="button text-center">Github</a>
-                        <a href="/downloads/" class="button text-center">Local</a>
-                        <a href="/mods/mental/wiki/" class="button text-center">Wiki</a>
-                    </div>
-                </div>
+        <x-panel outline>
+          <x-panel-head>
+            <h3>Mental</h3>
+          </x-panel-head>
+          <x-panel-body>
+            <p>Adding over 200 ores to your game, among other things.</p>
+          </x-panel-body>
+          <x-panel-foot>
+            <a href="https://minecraft.curseforge.com/projects/metal" class="button text-center">CurseForge</a>
+            <a href="https://mods.io/mods/1258-mental" class="button text-center">Mods.io</a>
+            <a href="https://github.com/Txuritan/mental/" class="button text-center">Github</a>
+            <a href="/downloads/" class="button text-center">Local</a>
+            <a href="/mods/mental/wiki/" class="button text-center">Wiki</a>
+          </x-panel-foot>
+        </x-panel>
 
 
-            </div>
-        </div>
-    </div>
-</div>
+      </x-panel-body>
+    </x-panel>
+  </x-column>
+</x-grid>

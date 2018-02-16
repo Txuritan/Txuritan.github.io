@@ -1,5 +1,7 @@
-panel {
-  &[outline] {
-    border: 1px solid darken($color__light--background, 10%);
+body[light] {
+  x-panel {
+    &[outline] {
+      border: 1px solid $color__light--foreground;
+    }
   }
 }

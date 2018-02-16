@@ -2,26 +2,27 @@
 title: Home
 layout: default
 ---
-<grid>
-    <colunm>
-        <panel>
-            <phead>
+<x-grid>
+    <x-colunm>
+        <x-panel>
+            <x-panel-head>
                 <h3>{{ page.title }}</h3>
-            </phead>
-            <pbody>
+            </x-panel-head>
+            <x-panel-body>
                 {% for post in site.posts limit:3 %}
-                <panel>
-                    <phead>
+                <x-panel outline>
+                    <x-panel-head>
                         <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
-                    </phead>
-                    <pbody>
+                    </x-panel-head>
+                    <x-panel-body>
+                        {{ post.excerpt }}
                         <small>
                             <strong>{{ post.date | date: "%B %e, %Y" }}</strong>.
                         </small>
-                    </pbody>
-                </panel>
+                    </x-panel-body>
+                </x-panel>
                 {% endfor %}
-            </pbody>
-        </panel>
-    </colunm>
-</grid>
+            </x-panel-body>
+        </x-panel>
+    </x-colunm>
+</x-grid>

@@ -1,7 +1,7 @@
-nav {
+x-nav {
   display: flex;
   flex-wrap: nowrap;
-  item {
+  x-nav-item {
     flex: 0 1 auto;
     &[brand] {
       font-weight: bold;
@@ -17,7 +17,7 @@ nav {
       white-space: nowrap;
     }
   }
-  nav-section {
+  x-nav-section {
     display: flex;
     flex: 0 1 auto;
     flex-wrap: nowrap;

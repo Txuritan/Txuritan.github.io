@@ -1,15 +1,15 @@
 ---
 layout: default
 ---
-<grid>
-    <column>
-        <panel>
-            <phead>
-                <h3>{{ page.title }}</h3>
-            </phead>
-            <pbody>
-                {{ content }}
-            </pbody>
-        </panel>
-    </column>
-</grid>
+<x-grid>
+  <x-column>
+    <x-panel>
+      <x-panel-head>
+        <h3>{{ page.title }}</h3>
+      </x-panel-head>
+      <x-panel-body>
+        {{ content }}
+      </x-panel-body>
+    </x-panel>
+  </x-column>
+</x-grid>
