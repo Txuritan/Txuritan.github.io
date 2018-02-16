@@ -13,6 +13,10 @@ $color__dark--foreground: $color__dark--white;
 body[dark] {
   background-color: $color__dark--background;
   color: $color__dark--foreground;
+
+  a {
+    color: $color__dark--blue;
+  }
 }
 
 @import "navbar";
