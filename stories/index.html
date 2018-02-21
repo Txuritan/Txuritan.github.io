@@ -14,9 +14,9 @@ layout: default
         <x-panel outline>
           <x-panel-head>
             <h3>
-              <a href="/stories/{{ story.link }}">{{ story.name }}</a>
+              <a href="/stories/{{ story.title | downcase | remove: ":" | remove: "'" | replace: " ", "-"}}/ch-1/">{{ story.title }}</a>
               <br />
-              {{ story.from }}
+              {{ story.fandom | join: ", " }}
             </h3>
           </x-panel-head>
           <x-panel-body>
@@ -24,9 +24,9 @@ layout: default
           </x-panel-body>
           <x-panel-foot>
             <p>
-              {{ story.tags }}
+              {{ story.meta.tags | join: ", " }}
               <br /><br />
-              Chapters: {{ story.chapters }}
+              Rating: {{ story.meta.rating | upcase }}, {{ story.meta.genres | join: ", " }}, Chapters: {{ story.chapters }}
             </p>
           </x-panel-foot>
         </x-panel>
@@ -36,3 +36,6 @@ layout: default
     </x-panel>
   </x-colunm>
 </x-grid>
+
+<script>
+</script>
