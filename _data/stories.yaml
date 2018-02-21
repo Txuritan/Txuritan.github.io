@@ -1,62 +1,127 @@
-- name: "A Dragon's Deal"
-  link: "a-dragons-deal/ch-1"
-  from: "How to Train Your Dragon"
-  summary: "Hicca makes a deal and now she has to kill the Red Death or she will turn into a dragon. X-Jinxa-X's A Dragons Deal. Thx X-Jinxa-X for giving me this story. Female Hiccup."
-  tags: "Rated: T - Romance/Adventure - Hiccup, Toothless"
-  chapters: "4"
+- title: "A Dragon's Deal"
+  fandom: 
+    - "How to Train Your Dragon"
+  summary: "Hicca makes a deal and now she has to kill the Red Death or she will turn into a dragon. X-Jinxa-X's A Dragons Deal. Thx X-Jinxa-X for giving me this story."
+  tags:
+    - "AU: Genderswap"
+    - "HTTYD-GS: Hiccup"
+  meta:
+    rating: "t"
+    genres:
+      - "Adventure"
+      - "Romance"
+    chapters: "4"
 
-- name: "Alla and Taeh"
-  link: "alla-and-taeh/ch-1"
-  from: "TKI"
+- title: "Alla and Taeh"
+  fandom: 
+    - "TKI-101"
   summary: "A loli cat and a fox scientist, what could go wrong?"
-  tags: "Rated: M - Romance/Adventure"
-  chapters: "2"
+  tags:
+    - ""
+  meta:
+    rating: "m"
+    genres:
+      - "Adventure"
+      - "Romance"
+    chapters: "2"
 
-- name: "Alpha and Omega: Uncovering The Past"
-  link: "alpha-and-omega-uncovering-the-past/ch-1"
-  from: "Alpha and Omega"
+- title: "Alpha and Omega: Uncovering The Past"
+  fandom: 
+    - "Alpha and Omega"
   summary: "Kate lost her memory and the Western Pack has to get her back, but will she come back after she meets Caileb, the old Southern Pack Leader?"
-  tags: "Rated: T - Mystery/Hurt/Comfort - Humphrey, Kate"
-  chapters: "7"
+  tags:
+    - ""
+  meta:
+    rating: "t"
+    genres:
+      - "Comfort"
+      - "Hurt"
+      - "Mystery"
+    chapters: "7"
 
-- name: "Chelsea and Columbus"
-  link: "chelsea-and-columbus/ch-1"
-  from: "Zombieland"
+- title: "Chelsea and Columbus"
+  fandom: 
+    - "Zombieland"
   summary: "A girl in Zombieland is out looking for a friend, or someone who will talk to her. A face that doesn't have blood onit even. But then, she finds Columbus. Story not mine its a friends on Devianart named campbellsoup1549."
-  tags: "Rated: T - Humor/Horror - Columbus"
-  chapters: "2"
+  tags:
+    - ""
+  meta:
+    rating: "t"
+    genres:
+      - "Horror"
+      - "Humor"
+    chapters: "2"
 
-- name: "Deaths Emissary"
-  link: "deaths-emissary/ch-1"
-  from: "Original"
+- title: "Deaths Emissary"
+  fandom: 
+    - "Original"
   summary: ""
-  tags: "Rated: M - Horror/Hurt/Comfort"
-  chapters: "1"
+  tags:
+    - ""
+  meta:
+    rating: "m"
+    genres:
+      - "Comfort"
+      - "Horror"
+      - "Humor"
+    chapters: "1"
 
-- name: "No Longer Cold"
-  link: "no-longer-cold/ch-1"
-  from: "ToraDora!"
+- title: "No Longer Cold"
+  fandom: 
+    - "ToraDora!"
   summary: "[HAVENT STARTED YET] A yandere Taiga!?! OH GOD RUN!!"
-  tags: "Rated: M - Horror/Hurt/Comfort"
-  chapters: "0"
+  tags:
+    - ""
+  meta:
+    rating: "m"
+    genres:
+      - "Comfort"
+      - "Horror"
+      - "Humor"
+    chapters: "0"
 
-- name: "Random Ideas"
-  link: "random-ideas/ch-1"
-  from: "Orginal"
+- title: "Random Ideas"
+  fandom: 
+    - "Orginal"
   summary: "[JUST TEMP] Just lots of random ideas that I get from time to time."
-  tags: "Rated: M - Romance/Adventure/Mystery/Hurt/Comfort"
-  chapters: "0"
+  tags:
+    - ""
+  meta:
+    rating: "m"
+    genres:
+      - "Adventure"
+      - "Comfort"
+      - "Humor"
+      - "Mystery"
+      - "Romance"
+    chapters: "0"
 
-- name: "Sisters In All But Blood"
-  link: "sisters-in-all-but-blood/ch-1"
-  from: "Alice Madness Returns, Bioshock"
+- title: "Sisters In All But Blood"
+  fandom: 
+    - "Alice Madness Returns"
+    - "Bioshock"
   summary: "[WRITING NOW] Elizabeth stumbles upon her rift ability with the help of a mysterious cat and opens a portal to Wonderland."
-  tags: "Rated: T - Adventure/Mystery/Hurt/Comfort - Alice, Elizabeth"
-  chapters: "0"
+  tags:
+    - ""
+  meta:
+    rating: "m"
+    genres:
+      - "Adventure"
+      - "Comfort"
+      - "Hurt"
+      - "Mystery"
+    chapters: "0"
 
-- name: "The End"
-  link: "the-end/ch-1"
-  from: "Alpha and Omega"
+- title: "The End"
+  fandom: 
+    - "Alpha and Omega"
   summary: "Random Idea"
-  tags: "Rated: T - English - Hurt/Comfort/Adventure - Humphrey, Lilly"
-  chapters: "1"
+  tags:
+    - ""
+  meta:
+    rating: "t"
+    genres:
+      - "Adventure"
+      - "Comfort"
+      - "Hurt"
+    chapters: "1"
