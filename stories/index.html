@@ -24,7 +24,7 @@ layout: default
           </x-panel-body>
           <x-panel-foot>
             <p>
-              {{ story.meta.tags | join: ", " }}
+              {{ story.tags | join: ", " }}
               <br /><br />
               Rating: {{ story.meta.rating | upcase }}, {{ story.meta.genres | join: ", " }}, Chapters: {{ story.chapters }}
             </p>
